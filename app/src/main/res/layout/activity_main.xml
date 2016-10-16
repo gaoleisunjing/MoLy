@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="project.gaolei.molyo.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_city_Id"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#000"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cityId"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="深圳"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/MolyoId"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="墨柚"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/ZxingId"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="二维码"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout_city_Id"
+        android:orientation="vertical">
+
+        <com.project.custom.MySwipeRefreshLayout
+            android:id="@+id/swipeId"
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+           >
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/molyou_recyclerViewId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </com.project.custom.MySwipeRefreshLayout>
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup_city_Id"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton_molyo_Id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:checked="true"
+            android:text="墨柚"
+            android:textColor="@color/item_text_color" />
+
+        <RadioButton
+            android:id="@+id/radioButton_search_Id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="查找"
+            android:textColor="@color/item_text_color" />
+
+        <RadioButton
+            android:id="@+id/radioButton_find_Id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="发现"
+            android:textColor="@color/item_text_color" />
+
+        <RadioButton
+            android:id="@+id/radioButton_me_Id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="我"
+            android:textColor="@color/item_text_color" />
+    </RadioGroup>
+
+
+</RelativeLayout>

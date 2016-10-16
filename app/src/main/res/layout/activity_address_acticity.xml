@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_address_acticity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="project.gaolei.molyo.AddressActicity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/address_image_Id"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/address_textView_Id"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="地址" />
+
+        <TextView
+            android:id="@+id/phone_textView_Id"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+
+            android:text="地址" />
+
+        <TextView
+            android:id="@+id/type_textView_Id"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="地址" />
+
+        <TextView
+            android:id="@+id/consum_textView_Id"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="地址" />
+
+        <TextView
+            android:id="@+id/openTime_textView_Id"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="地址" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/address_image_Id"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@mipmap/ic_launcher" />
+
+</RelativeLayout>

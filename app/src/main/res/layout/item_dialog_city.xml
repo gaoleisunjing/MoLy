@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/city_select_msgId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:text="城市选择"
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+    <GridView
+        android:id="@+id/gridview_cityId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:numColumns="4"
+        android:stretchMode="columnWidth" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center_horizontal"
+        android:text="我们正在努力开发更多城市"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
